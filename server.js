@@ -16,9 +16,10 @@ app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ limit: '50mb', extended: true }));
 
 // --- CONEXÃO COM O BANCO DE DADOS ---
-mongoose.connect(process.env.MONGO_URI)
-    .then(() => console.log('✅ Conectado ao MongoDB com sucesso!'))
-    .catch((err) => console.error('❌ Erro ao conectar ao MongoDB:', err));
+const mongoURI = process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/onepiece_deck';
+mongoose.connect(mongoURI)
+    .then(() => console.log('Conectado ao MongoDB Atlas com sucesso!'))
+    .catch((err) => console.error('Erro de conexão ao MongoDB:', err)); 
 
 // Configurações
 app.set('view engine', 'ejs');
