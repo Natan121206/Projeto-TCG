@@ -1,0 +1,134 @@
+/* Configurações Gerais */
+body {
+    background-color: #0d0f12; /* Azul quase preto */
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 50px;
+}
+
+/* Títulos */
+h1 {
+    color: #ffc107; /* Amarelo One Piece */
+    font-weight: 800;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Container do Formulário e da Tabela */
+.custom-card {
+    background-color: #1a1d21;
+    border: 1px solid #2d3238;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    margin-bottom: 40px;
+}
+
+/* Estilo específico para o nome da carta na tabela */
+.card-name {
+    color: #ffffff !important; /* Branco puro */
+    font-weight: 700 !important; /* Negrito bem forte */
+    font-size: 1.1rem; /* Aumenta um pouquinho o tamanho */
+    text-transform: capitalize; /* Garante que a primeira letra seja maiúscula */
+}
+
+/* Opcional: Efeito de brilho suave no nome */
+.card-name:hover {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+}
+
+/* Labels do Formulário (Brancos e nítidos) */
+.form-label {
+    color: #ffffff !important;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.form-control {
+    background-color: #0d0f12;
+    border: 1px solid #343a40;
+    color: white;
+}
+
+.form-control:focus {
+    background-color: #16191c;
+    color: white;
+    border-color: #ffc107;
+    box-shadow: none;
+}
+
+/* Tabela */
+/* Remove o fundo branco das tabelas do Bootstrap */
+.table {
+    --bs-table-bg: transparent !important;
+    background-color: transparent !important;
+    margin-bottom: 0;
+}
+
+/* Garante que as linhas não tenham fundo branco ao passar o mouse */
+.table-hover tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    color: white !important;
+}
+
+/* Remove bordas brancas que podem sobrar */
+.table td, .table th {
+    border-color: #2d3238 !important;
+}
+
+.table thead th {
+    color: #ffffff !important; /* Força o branco nos títulos */
+    border-bottom: 2px solid #ffc107;
+    padding: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.table tbody td {
+    padding: 15px;
+    border-bottom: 1px solid #2d3238;
+    vertical-align: middle;
+}
+
+/* Estilo dos Preços */
+.price-tag {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.price-min {
+    background-color: rgba(40, 167, 69, 0.2);
+    color: #28a745;
+    border: 1px solid #28a745;
+}
+
+.price-max {
+    background-color: rgba(220, 53, 69, 0.2);
+    color: #dc3545;
+    border: 1px solid #dc3545;
+}
+
+/* Badges de ID */
+.id-badge {
+    background-color: #2d3238;
+    color: #ffc107;
+    padding: 5px 8px;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.text-warning {
+    color: #ffc107 !important;
+    font-family: 'Courier New', monospace;
+    font-size: 1.1rem;
+}
+/* No seu style.css */
+.badge-qty {
+    background: rgba(255, 193, 7, 0.1);
+    color: #ffc107;
+    border: 1px border #ffc107;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+}
